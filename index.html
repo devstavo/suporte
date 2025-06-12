@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Suporte por Áudio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>🎧 Sistema de Suporte por Áudio</h1>
+    <p>Conecte-se ao GOTO para buscar suas gravações e analisá-las com IA.</p>
+    
+    <hr>
+
+    <div>
+        <h3>📞 Gravações do GOTO</h3>
+        <p>Status: <span id="statusText">Pronto</span></p>
+        <button id="connectAndFetchButton">Conectar com a GoTo e Buscar Gravações</button>
+        <div id="recordingsList">
+            <p>As gravações aparecerão aqui...</p>
+        </div>
+    </div>
+
+    <hr>
+    
+    <div>
+      <h3>📝 Análise da Chamada</h3>
+      <h4>Transcrição:</h4>
+      <div id="transcriptionBox" class="analysis-box"></div>
+      <h4>Resumo:</h4>
+      <div id="summaryBox" class="analysis-box"></div>
+      <h4>Problema:</h4>
+      <div id="problemBox" class="analysis-box"></div>
+      <h4>Solução:</h4>
+      <div id="solutionBox" class="analysis-box"></div>
+    </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* styles.css */
+body { 
+    font-family: sans-serif; 
+    padding: 1em; 
+    line-height: 1.6; 
+    background-color: #f4f4f4;
+}
+
+h1, h3, h4 {
+    color: #333;
+}
+
+button {
+    background-color: #0077c8;
+    color: white;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+.recording-item {
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Classe para as caixas de análise */
+.analysis-box {
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    padding: 10px;
+    min-height: 50px;
+    white-space: pre-wrap; /* Para preservar quebras de linha na transcrição */
+}
+
+/* Tamanho específico para a caixa de transcrição */
+#transcriptionBox {
+    min-height: 80px;
+}
